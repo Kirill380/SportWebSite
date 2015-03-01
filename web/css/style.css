@@ -1,0 +1,23 @@
+.first-slide-caption {
+	top:20%;
+	left: 27%;
+}
+
+.caption-wrapper {
+	position: relative;
+	top: -20%;
+	left: -20%;
+	height: 200px;
+	width: 400px;
+	background-color: #555;
+	opacity: .5;
+}
+
+
+.first-slide-caption h3 {
+	position: absolute;
+	top:51px;
+	left: -94px;
+	font-size: 72px;
+	opacity: 1;
+}
