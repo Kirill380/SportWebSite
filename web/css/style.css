@@ -1,23 +1,41 @@
-.first-slide-caption {
-	top:20%;
-	left: 27%;
+body {
+	background: #222;
 }
 
-.caption-wrapper {
-	position: relative;
-	top: -20%;
-	left: -20%;
-	height: 200px;
-	width: 400px;
-	background-color: #555;
-	opacity: .5;
+.slider-wrapper {
+	background: #000;
 }
 
+.third-slide {
+	float: right;
+}
 
-.first-slide-caption h3 {
-	position: absolute;
-	top:51px;
-	left: -94px;
-	font-size: 72px;
-	opacity: 1;
+.news {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.news>div {
+	color: white;
+}
+
+.news h5 {
+	background: #333;
+	height: 40px;
+	font-size: 20px;
+	padding-left: 20px;
+	line-height: 40px;
+}
+
+.news-content {
+	background: #333;
+	padding: 20px;
+}
+
+.footer {
+	border-top: solid 1px red;
+	color: white;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
 }
