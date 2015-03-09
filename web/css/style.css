@@ -2,6 +2,10 @@ body {
 	background: #222;
 }
 
+#navbar-active {
+	color: white;
+}
+
 .slider-wrapper {
 	background: #000;
 }
