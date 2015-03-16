@@ -22,6 +22,10 @@ public class News {
         this.header = header;
     }
 
+    public void setOrderDate(Timestamp orderDate) {
+        this.orderDate = orderDate;
+    }
+
     public Timestamp getOrderDate() {
         return orderDate;
     }
@@ -46,7 +50,4 @@ public class News {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 }
