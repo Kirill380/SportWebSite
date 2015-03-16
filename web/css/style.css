@@ -14,15 +14,16 @@ body {
 	float: right;
 }
 
-.news {
+.news, .vacations {
 	margin-top: 20px;
 	margin-bottom: 20px;
+	line-height: 25px;
 }
-.news>div {
+.news>div, .vacations>div {
 	color: white;
 }
 
-.news h5 {
+.news h5, .vacations h5 {
 	background: #333;
 	height: 40px;
 	font-size: 20px;
@@ -30,7 +31,7 @@ body {
 	line-height: 40px;
 }
 
-.news-content {
+.news-content, .vacations-content {
 	background: #333;
 	padding: 20px;
 }
@@ -38,6 +39,64 @@ body {
 .content-about-us {
 	color: white;
 	margin-top: 50px;
+}
+
+.content-vacancies {
+	color: white;
+	margin-top: 100px;
+}
+
+.content-add-news {
+	margin-top: 50px;
+	color: #CCC;
+}
+
+.content-add-news>.row h1 {
+	margin-left: 50px;
+}
+
+.content-add-news h3 {
+	margin-left: 5px;
+}
+
+form {
+	margin-left: 50px;
+
+}
+
+#head {
+	width: 400px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 24px;
+	opacity: 0.6;
+	background: black;
+	border: none;
+	color: white;
+	padding: 5px 5px;
+}
+
+textarea {
+	height: 300px;
+	width: 60%;
+	border: none;
+	opacity: 0.6;
+	color: white;
+	background: black;
+	padding: 10px 10px;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+.content-add-news button {
+	margin-left: 550px;
+	margin-top: -10px;
+	background: black;
+	color: white;
+}
+
+.btn-wrapper {
+	margin-bottom: 20px;
 }
 
 .header-pic-will-be-here {
@@ -63,4 +122,13 @@ body {
 	height: 40px;
 	line-height: 40px;
 	font-size: 16px;
+}
+
+.footer>.row {
+	margin: 20px 0;
+}
+
+.footer>.row>div {
+	/*background: #333;*/
+	border-top: none;
 }
