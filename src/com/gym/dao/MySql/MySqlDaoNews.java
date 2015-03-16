@@ -7,15 +7,14 @@ import com.gym.entity.News;
 import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Locale;
 
 /**
  * Created by Nout on 16/03/2015.
  */
 public class MySqlDaoNews implements DaoNews {
     //TODO think about more pretty solution
-    private String user = "";
-    private String password = "";
+    private String user = "root";
+    private String password = "send08";
     private String host = "localhost";
     private String dbName = "gym";
     private String url = "jdbc:mysql://"  + host + "/" + dbName + "?user=" + user + "&password=" + password;;
@@ -63,7 +62,7 @@ public class MySqlDaoNews implements DaoNews {
             if (count != 1) {
                 throw new PersistException("On persist inserted more then 1 record: " + count);
             }
-
+            con.commit();
         } catch (SQLException e) {
             throw new PersistException(e);
         }
@@ -93,9 +92,7 @@ public class MySqlDaoNews implements DaoNews {
         }
     }
 
-
     private Connection getConnection() throws PersistException {
-        Locale.setDefault(Locale.ENGLISH); // work around
         Connection con = null;
         try {
             con = DriverManager.getConnection(url, user, password);

@@ -33,6 +33,7 @@ public class NewsController extends HttpServlet {
             status = "Cannot add the new news due to " + e.getMessage();
         }
 
+        System.out.println(status);
 //        request.setAttribute("result", status);
 //        RequestDispatcher view = request.getRequestDispatcher("result.jsp");
 //        view.forward(request, response);
