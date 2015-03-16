@@ -15,6 +15,7 @@ import java.sql.Timestamp;
 import java.util.Date;
 
 
+
 @WebServlet(name = "NewsController", value ="/NewsController")
 public class NewsController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
