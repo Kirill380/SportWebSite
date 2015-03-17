@@ -5,6 +5,14 @@ body {
 	background: #222;
 }
 
+.header {
+	font-size: 16px;
+}
+
+.header .bold-font {
+	font-weight: bold;
+}
+
 .footer {
 	border-top: solid 1px red;
 	color: white;
@@ -34,8 +42,12 @@ body {
 	margin-top: 50px;
 }
 
-.third-slide {
-	float: right;
+.carousel-caption h2 {
+	font-size: 56px;
+}
+
+.carousel-caption p {
+	font-size: 18px;
 }
 
 .news, .vacations {
