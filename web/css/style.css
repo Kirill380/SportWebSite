@@ -50,6 +50,16 @@ body {
 	font-size: 18px;
 }
 
+.news-header {
+	color: #DDD;
+	margin-left: 40px;
+}
+
+.news-without-header {
+	border-top: solid 1px white;
+	padding: 20px;
+}
+
 .news, .vacations {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -60,7 +70,7 @@ body {
 }
 
 .news h5, .vacations h5 {
-	background: #475464;
+	background: #318898;
 	height: 40px;
 	font-size: 24px;
 	padding-left: 20px;
@@ -70,6 +80,7 @@ body {
 .news-content, .vacations-content {
 	background: #333;
 	padding: 20px;
+
 }
 
 /* About us page's style*/
