@@ -14,7 +14,7 @@ body {
 }
 
 .footer {
-	border-top: solid 1px red;
+	border-top: solid 1px white;
 	color: white;
 	text-align: center;
 	height: 40px;
@@ -60,9 +60,9 @@ body {
 }
 
 .news h5, .vacations h5 {
-	background: #333;
+	background: #475464;
 	height: 40px;
-	font-size: 20px;
+	font-size: 24px;
 	padding-left: 20px;
 	line-height: 40px;
 }
