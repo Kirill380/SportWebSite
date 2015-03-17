@@ -1,13 +1,37 @@
+
+/* All page's styles */
+
 body {
 	background: #222;
 }
 
-#navbar-active {
+.footer {
+	border-top: solid 1px red;
 	color: white;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
 }
+
+.footer>.row {
+	margin: 20px 0;
+}
+
+.footer>.row>div {
+	/*background: #333;*/
+	border-top: none;
+}
+
+.nav>li>a {
+	color: black;
+}
+
+/* Main page's styles */
 
 .slider-wrapper {
 	background: #000;
+	margin-top: 50px;
 }
 
 .third-slide {
@@ -36,15 +60,21 @@ body {
 	padding: 20px;
 }
 
+/* About us page's style*/
+
 .content-about-us {
 	color: white;
 	margin-top: 50px;
 }
 
+/* Vacancies page's style */
+
 .content-vacancies {
 	color: white;
 	margin-top: 100px;
 }
+
+/* Add news page's style */
 
 .content-add-news {
 	margin-top: 50px;
@@ -113,22 +143,4 @@ textarea {
 	float: left;
 	margin-right: 40px;
 	margin-bottom: 40px;
-}
-
-.footer {
-	border-top: solid 1px red;
-	color: white;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	font-size: 16px;
-}
-
-.footer>.row {
-	margin: 20px 0;
-}
-
-.footer>.row>div {
-	/*background: #333;*/
-	border-top: none;
 }
