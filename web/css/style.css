@@ -53,7 +53,7 @@ body {
 .news-header {
 	color: #DDD;
 	margin-left: 40px;
-	font-size: 26px;
+	font-size: 22px;
 }
 
 .news-without-header {
@@ -73,7 +73,7 @@ body {
 .news h5 {
 	background: #318898;
 	height: 40px;
-	font-size: 22px;
+	font-size: 18px;
 	padding-left: 20px;
 	line-height: 40px;
 }
@@ -81,6 +81,7 @@ body {
 .news-content, .vacations-content {
 	background: #333;
 	padding: 20px;
+	margin-top: -10px;
 
 }
 
