@@ -50,6 +50,84 @@ body {
 	font-size: 18px;
 }
 
+.main-page-content {
+	color: white;
+	padding: 20px;
+}
+
+.little-row {
+	margin-top: 20px;
+}
+
+.little-shedule {
+	background: rgb(248, 248, 248);
+	color: #27606B;
+	font-size: 16px;
+}
+
+.little-shedule .list-group-item {
+	background: rgb(248, 248, 248);
+	height: 50px;
+}
+
+.little-shedule .badge {
+	background: rgb(248, 248, 248);
+	color: #27606B;
+	line-height: 15px;
+}
+
+.little-contacts {
+	background: #3B96A6;
+	height: 228px;
+	font-size: 16px;
+}
+
+.little-contacts-content .list-group-item:hover {
+	background: #27606B;
+	color: white;
+}
+
+.little-contacts .list-group-item {
+	background: #3B96A6;
+	height: 50px;
+	color: white;
+}
+
+.little-contacts .btn-primary {
+	background: #27606B;
+	margin-top: 23px;
+}
+
+.little-contacts .btn-primary:hover {
+	background: #1C4B54;
+}
+
+.little-free-training {
+	background: #27606B;
+	height: 228px;
+	font-size: 16px;
+}
+
+.little-free-training-content {
+	padding: 20px;
+}
+
+.little-free-training .btn-primary {
+	background: #3B96A6;
+	margin-top: 16px;
+}
+
+.little-free-training .btn-primary:hover {
+	background: #278393;
+}
+
+.little-shedule h5, .little-contacts h5, .little-free-training h5 {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	font-size: 18px;
+}
+
 .news-header {
 	color: #DDD;
 	margin-left: 40px;
@@ -58,30 +136,33 @@ body {
 
 .news-without-header {
 	border-top: solid 1px white;
-	padding: 20px;
 }
 
-.news {
+.news-and-sections {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	line-height: 25px;
 }
-.news>div {
-	color: white;
-}
 
-.news h5 {
-	background: #318898;
-	height: 40px;
+.news-and-sections a {
+	color: white;
+	margin-top: 20px;
+	background: #3B96A6;
+	height: 50px;
 	font-size: 18px;
 	padding-left: 20px;
 	line-height: 40px;
 }
 
-.news-content, .vacations-content {
+.news-and-sections a:hover {
+	background: #27606B;
+}
+
+.news-content {
 	background: #333;
 	padding: 20px;
 	margin-top: -10px;
+	margin-bottom: 10px;
 
 }
 
