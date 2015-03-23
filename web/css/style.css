@@ -166,6 +166,7 @@ body {
 	-moz-transition: background .5s ease-in-out;
 	-o-transition: background .5s ease-in-out;
 	transition: background .5s ease-in-out;
+	border-radius: 5px;
 }
 
 .new-1:hover, .new-2:hover, .new-3:hover {
@@ -174,7 +175,6 @@ body {
 	-o-transition: background .5s ease-in-out;
 	transition: background .5s ease-in-out;
 	background: #27606B;
-	border-radius: 5px;
 }
 
 .section-1, .section-2, .section-3 {
