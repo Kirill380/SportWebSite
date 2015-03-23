@@ -151,9 +151,6 @@ body {
 	margin-bottom: 30px;
 }
 
-.sections {
-}
-
 .news-and-sections .btn-block {
 	color: #F8F8F8;
 	font-size: 18px;
@@ -162,34 +159,42 @@ body {
 .news a, .sections a {
 	margin-bottom: 10px;
 }
-
-.content-section-1, .content-section-2, .content-section-3 {
-	height: 122px;
-	overflow: hidden;
-}  
-
-/* .news-and-sections a {
-	color: white;
-	margin-top: 20px;
-	background: #3B96A6;
-	height: 50px;
-	font-size: 18px;
-	padding-left: 20px;
-	line-height: 40px;
+ 
+.new-1, .new-2, .new-3 {
+	padding: 25px;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
 }
 
-.news-and-sections a:hover {
+.new-1:hover, .new-2:hover, .new-3:hover {
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
 	background: #27606B;
-} */
-/* 
-.news-content {
-	background: #333;
-	padding: 20px;
-	margin-top: -10px;
-	margin-bottom: 10px;
-
+	border-radius: 5px;
 }
- */
+
+.section-1, .section-2, .section-3 {
+	padding: 25px;
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
+	border-radius: 5px;
+} 
+
+.section-1:hover, .section-2:hover, .section-3:hover {
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	-o-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
+	background: #27606B;
+}
+
+
 /* About us page's style*/
 
 .content-about-us {
