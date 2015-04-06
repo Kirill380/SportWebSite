@@ -9,6 +9,16 @@ body {
 	font-size: 16px;
 }
 
+.navbar {
+	background: #E8E8E8;
+}
+
+.navbar-nav .active a {
+	background: #3B96A6 !important;
+	color: white !important;
+	border-bottom: none;
+}
+
 .header .bold-font {
 	font-weight: bold;
 }
@@ -68,6 +78,7 @@ body {
 .little-shedule .list-group-item {
 	background: rgb(248, 248, 248);
 	height: 50px;
+	border: none;
 }
 
 .little-shedule .badge {
@@ -278,4 +289,53 @@ textarea {
 	float: left;
 	margin-right: 40px;
 	margin-bottom: 40px;
+}
+
+/*   registration page style*/
+
+.registration-content {
+	margin-top: 50px;
+	color: white;
+}
+
+.registration-content input {
+	color: black;
+	height: 26px;
+	margin-top: 25px;
+	width: 300px;
+}
+
+.registration-content h2 {
+	margin-left: 100px;
+	font-size: 36px;
+}
+
+.registration-content form {
+	margin-top: 50px;
+}
+
+.registration-content label, .registration-content select {
+	font-weight: normal;
+	margin-top: 26px;
+}
+
+.space {
+	height: 50px;
+	width: 100%;
+}
+
+.registration-content input[type="submit"] {
+	width: 120%;
+	height: 45px;
+	margin-top: 50px; 
+	margin-left: 99px;
+	background: #3B96A6;
+	border: solid 1px #27606B;
+	color: white;
+	font-size: 18px;
+}
+
+.registration-content input[type="submit"]:hover {
+	background: #27606B;
+	border: solid 1px #3B96A6;
 }
