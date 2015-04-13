@@ -50,13 +50,60 @@
                   </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><button type="button" class="btn btn-default navbar-btn">Регистрация</button></li>
-                  <li><button type="button" class="btn btn-default navbar-btn">Вход</button></li>
+                  <li><a href="" data-toggle="modal" data-target="#login"><b>Вход</b></a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="modal fade" id="login" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="loginLabel">Введите логин и пароль</h4>
+            </div>
+            <div class="modal-body">
+              <form action="" method="POST">
+                <div class="row">
+                  <div class="col-lg-2">
+                    <label>Логин:</label>
+                  </div>
+                  <div class="col-lg-3">
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-2">
+                    <label>Пароль:</label>
+                  </div>
+                  <div class="col-lg-3">
+                    <input type="password">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <input type="checkbox">
+                    Запомнить меня?
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    Нет аккаунта?
+                    <a href="registration.html">Регистрация</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default login-cancel" data-dismiss="modal">Отмена</button>
+              <input type="submit">
+            </div>
+          </div>
+        </div>
+
       </div>
       
       <div class="container-fluit slider-wrapper">

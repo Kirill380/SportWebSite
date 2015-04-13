@@ -23,6 +23,20 @@ body {
 	font-weight: bold;
 }
 
+input[type="submit"] {
+	height: 45px;
+	background: #3B96A6;
+	border: solid 1px #27606B;
+	color: white;
+	font-size: 18px;
+}
+
+input[type="submit"]:hover {
+	background: #27606B;
+	border: solid 1px #3B96A6;
+}
+
+
 .footer {
 	border-top: solid 1px white;
 	color: white;
@@ -58,6 +72,21 @@ body {
 
 .carousel-caption p {
 	font-size: 18px;
+}
+
+.modal-body .row {
+	margin-top: 24px;
+}
+
+#login input[type="submit"] {
+	height: 36px;
+	font-size: 14px;
+}
+
+.login-cancel {
+	height: 36px;
+	border-radius: 0px;
+	margin-bottom: 3px;
 }
 
 .main-page-content {
@@ -307,7 +336,8 @@ textarea {
 
 .registration-content h2 {
 	margin-left: 100px;
-	font-size: 36px;
+	margin-top: 50px;
+	font-size: 32px;
 }
 
 .registration-content form {
@@ -325,17 +355,23 @@ textarea {
 }
 
 .registration-content input[type="submit"] {
-	width: 120%;
+	width: 200px;
 	height: 45px;
-	margin-top: 50px; 
-	margin-left: 99px;
-	background: #3B96A6;
-	border: solid 1px #27606B;
 	color: white;
-	font-size: 18px;
+	margin-left: -47px;
 }
 
-.registration-content input[type="submit"]:hover {
-	background: #27606B;
-	border: solid 1px #3B96A6;
+.clean {
+	height: 45px;
+	border-radius: 0px;
+	margin-top: 25px;
+	color: black !important;
+}
+
+.important-field {
+	color: red;
+}
+
+select, option {
+	color: black !important;
 }
