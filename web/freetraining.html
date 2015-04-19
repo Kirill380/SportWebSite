@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Регистрация</title>
+    <title>Бесплатная тренировка</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
               <div class="collapse navbar-collapse" id="responsive-menu">
                 <ul class="nav navbar-nav">
                   <li><a href="index.html">Главная</a></li>
-                  <li><a href="freetraining.html"><span class="bold-font">Бесплатная тренировка</span></a></li>
+                  <li class="active"><a href="#"><span class="bold-font">Бесплатная тренировка</span></a></li>
                   <li><a href="#">Расписание</a></li>
                   <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Секции <b class="caret"></b></a>
@@ -51,7 +51,6 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="" data-toggle="modal" data-target="#login"><b>Вход</b></a></li>
-                  <li class="active"><a href="">Регистрация</a></li>
                 </ul>
               </div>
             </div>
@@ -110,73 +109,114 @@
         </div>
       </div>
       
-      <div class="container registration-content">
-        <h2>Регистрация</h2>
+      <div class="container free-training-content">
+        <h2>Заказать бесплатное посещение</h2>
         <form action="" method="POST">
         <div class="container">
             <div class="row">
+            <div class="col-lg-1"></div>
             <div class="col-lg-2">
-              <label>Логин <span class="important-field">*</span>:</label><br>
+              <label>Желаемая дата</label><br>
+            </div>
+            <div class="col-lg-6">
+               <select id="month">
+                 <option>Месяц</option>
+                 <option>Янаварь</option>
+                 <option>Февраль</option>
+                 <option>Март</option>
+                 <option>Апрель</option>
+                 <option>Май</option>
+                 <option>Июнь</option>
+                 <option>Июль</option>
+                 <option>Август</option>
+                 <option>Сентябрь</option>
+                 <option>Октябрь</option>
+                 <option>Ноябрь</option>
+                 <option>Декабрь</option>
+               </select>
+        
+              <select id="day">
+                <option>День</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+              </select>
+          
+              <select id="year">
+                <option>Год</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+              </select>
+            </div>
+          </div>
+            <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-2">
+               <label>Ваше имя</label>
             </div>
             <div class="col-lg-4">
                <input type="text">
             </div>
           </div>
             <div class="row">
+            <div class="col-lg-1"></div>
             <div class="col-lg-2">
-               <label>Пароль <span class="important-field">*</span>:</label>
-            </div>
-            <div class="col-lg-4">
-               <input type="password">
-            </div>
-          </div>
-            <div class="row">
-            <div class="col-lg-2">
-            <label>Подтвердите пароль <span class="important-field">*</span>:</label>
-            </div>
-            <div class="col-lg-4">
-               <input type="password">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-2">
-            <label>E-mail адрес <span class="important-field">*</span>:</label>
+            <label>E-mail адрес</label>
             </div>
             <div class="col-lg-4">
                <input type="email">
             </div>
           </div>
-          <br>
-            <div class="row">
+          <div class="row">
+          <div class="col-lg-1"></div>
             <div class="col-lg-2">
-            <label>Полное имя:</label>
+            <label>Телефон</label>
             </div>
             <div class="col-lg-4">
-                <input type="text">
-            </div>
-          </div>
-            <div class="row">
-            <div class="col-lg-2">
-             <label>Дата рождения:</label>
-            </div>
-            <div class="col-lg-4">
-               <input type="date">
+               <input type="tel">
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-2">
-             <label>Ваш пол:</label>
-            </div>
-            <div class="col-lg-4">
-               <select>
-                 <option value="male">Парень</option>
-                 <option value="female">Девушка</option>
-               </select>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6">
+              <p> Все поля являются обязательными для заполнения</p>
             </div>
           </div>
-          <br>
+          
+            
           <div class="row">
-          <div class="col-lg-2"></div>
+          <div class="col-lg-3"></div>
           <div class="col-lg-3">
             <div class="row">
               <div class="col-lg-6">
@@ -191,8 +231,6 @@
           
           <div class="space"></div>
           </div>
-
-
         </form>
       </div>
       

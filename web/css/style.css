@@ -33,7 +33,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
 	background: #27606B;
-	border: solid 1px #3B96A6;
+	border: solid 1px #27606B;
 }
 
 
@@ -58,6 +58,14 @@ input[type="submit"]:hover {
 .nav>li>a {
 	color: black;
 }
+
+/* Modal page's styles*/
+
+.modal h4 {
+	margin-left: 40px;
+	margin-top: 10px;
+}
+
 
 /* Main page's styles */
 
@@ -334,6 +342,10 @@ textarea {
 	width: 300px;
 }
 
+.registration-content input[type="date"] {
+	width: 123px;
+}
+
 .registration-content h2 {
 	margin-left: 100px;
 	margin-top: 50px;
@@ -366,6 +378,11 @@ textarea {
 	border-radius: 0px;
 	margin-top: 25px;
 	color: black !important;
+	background: #E8E8E8 !important;
+}
+
+.clean:hover {
+	background: #B3B3B3 !important;
 }
 
 .important-field {
@@ -375,3 +392,60 @@ textarea {
 select, option {
 	color: black !important;
 }
+
+/* free training page*/
+
+.free-training-content {
+	margin-top: 50px;
+	color: white;
+}
+
+.free-training-content input {
+	color: black;
+	height: 26px;
+	margin-top: 25px;
+	width: 300px;
+}
+
+.free-training-content input[type="date"] {
+	width: 123px;
+}
+
+.free-training-content h2 {
+	margin-left: 100px;
+	margin-top: 50px;
+	font-size: 32px;
+}
+
+.free-training-content form {
+	margin-top: 50px;
+}
+
+.free-training-content label, .free-training-content select {
+	font-weight: normal;
+	margin-top: 26px;
+}
+
+.free-training-content select {
+	height: 26px;
+}
+
+#day, #year, #month {
+	width: 90px;
+	margin-right: 11px;
+}
+
+.free-training-content input[type="submit"] {
+	width: 200px;
+	height: 45px;
+	color: white;
+	margin-left: -47px;
+}
+
+.free-training-content p {
+	margin-top: 20px;
+	color: #BB5353;
+}
+
+/* clean button style is located in registragion section*/
+
