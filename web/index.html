@@ -1,304 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная страница</title>
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.1.3.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  </head>
-  <body>
-      <div class="container header">
-        <div class="row">
-          <div class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#responsive-menu">
-                <span class="sr-only">Открыть навигацию</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-              
-              <div class="collapse navbar-collapse" id="responsive-menu">
-                <ul class="nav navbar-nav">
-                  <li class="active"><a href="#">Главная</a></li>
-                  <li><a href="freetraining.html"><span class="bold-font">Бесплатная тренировка</span></a></li>
-                  <li><a href="#">Расписание</a></li>
-                  <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Секции <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Тренажерный зал</a></li>
-                    <li><a href="#">Рукопашный бой</a></li>
-                    <li><a href="#">Pole dance</a></li>
-                  </ul>
-                  </li>
-                  
-                  <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">О нас <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">История</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Тренера</a></li>
-                  </ul>
-                  </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="" data-toggle="modal" data-target="#login"><b>Вход</b></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <script src="js/index.js"></script>
 
-      <div class="modal fade" id="login" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-md">
-          <div class="modal-content">
+</head>
+<body>
+<div class="container header">
+    <div class="row">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#responsive-menu">
+                        <span class="sr-only">Открыть навигацию</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="responsive-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Главная</a></li>
+                        <li><a href="freetraining.html"><span class="bold-font">Бесплатная тренировка</span></a></li>
+                        <li><a href="#">Расписание</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Секции <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Тренажерный зал</a></li>
+                                <li><a href="#">Рукопашный бой</a></li>
+                                <li><a href="#">Pole dance</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">О нас <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">История</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Тренера</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="" data-toggle="modal" data-target="#login"><b>Вход</b></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="login" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="loginLabel">Введите логин и пароль</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="loginLabel">Введите логин и пароль</h4>
             </div>
             <div class="modal-body">
-              <form action="" method="POST">
-                <div class="row">
-                <div class="col-lg-1"></div>
-                  <div class="col-lg-2">
-                    <label>Логин:</label>
-                  </div>
-                  <div class="col-lg-3">
-                    <input type="text">
-                  </div>
-                </div>
-                <div class="row">
-                <div class="col-lg-1"></div>
-                  <div class="col-lg-2">
-                    <label>Пароль:</label>
-                  </div>
-                  <div class="col-lg-3">
-                    <input type="password">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-1"></div>
-                  <div class="col-lg-11">
-                    <input type="checkbox">
-                    Запомнить меня?
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-1"></div>
-                  <div class="col-lg-11">
-                    Нет аккаунта?
-                    <a href="registration.html">Регистрация</a>
-                  </div>
-                </div>
-              </form>
+                <form action="" method="POST">
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-2">
+                            <label>Логин:</label>
+                        </div>
+                        <div class="col-lg-3">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-2">
+                            <label>Пароль:</label>
+                        </div>
+                        <div class="col-lg-3">
+                            <input type="password">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-11">
+                            <input type="checkbox">
+                            Запомнить меня?
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-11">
+                            Нет аккаунта?
+                            <a href="registration.html">Регистрация</a>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default login-cancel" data-dismiss="modal">Отмена</button>
-              <input type="submit">
+                <button type="button" class="btn btn-default login-cancel" data-dismiss="modal">Отмена</button>
+                <input type="submit">
             </div>
-          </div>
         </div>
+    </div>
 
-      </div>
-      
-      <div class="container-fluit slider-wrapper">
-        <div id="carousel" class="carousel slide" data-ride="carousel">
+</div>
+
+<div class="container-fluit slider-wrapper">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
         <!--Индикаторы слайдов-->
         <ol class="carousel-indicators">
-          <li class="active" data-target="#carousel" data-slide-to="0"></li>
-          <li data-target="#carousel" data-slide-to="1"></li>
-          <li data-target="#carousel" data-slide-to="2"></li>
+            <li class="active" data-target="#carousel" data-slide-to="0"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
         </ol>
 
         <!--Слайды-->
         <div class="carousel-inner">
-          <div class="item active">
-            <img src="resourses/slider-pictures/slider-picture-1.png" alt="">
-            <div class="carousel-caption first-slide-caption">
-              <h2>Рукопашный бой</h2>
-              <p>Для сильных духом мужчин</p>
+            <div class="item active">
+                <img src="resourses/slider-pictures/slider-picture-1.png" alt="">
+
+                <div class="carousel-caption first-slide-caption">
+                    <h2>Рукопашный бой</h2>
+
+                    <p>Для сильных духом мужчин</p>
+                </div>
             </div>
-          </div>
-          <div class="item">
-            <img src="resourses/slider-pictures/slider-picture-2.png" alt="">
-            <div class="carousel-caption second-slide-caption">
-              <h2>Живи сейчас!</h2>
-              <p>Заказывай бесплатное посещение уже сегодня</p>
+            <div class="item">
+                <img src="resourses/slider-pictures/slider-picture-2.png" alt="">
+
+                <div class="carousel-caption second-slide-caption">
+                    <h2>Живи сейчас!</h2>
+
+                    <p>Заказывай бесплатное посещение уже сегодня</p>
+                </div>
             </div>
-          </div>
-          <div class="item">
-            <img src="resourses/slider-pictures/slider-picture-3.png" alt="" class="third-slide">
-            <div class="carousel-caption third-slide-caption">
-              <h2>Достичь невозможного!</h2>
-              <p>Наши тренера в этом помогут!</p>
+            <div class="item">
+                <img src="resourses/slider-pictures/slider-picture-3.png" alt="" class="third-slide">
+
+                <div class="carousel-caption third-slide-caption">
+                    <h2>Достичь невозможного!</h2>
+
+                    <p>Наши тренера в этом помогут!</p>
+                </div>
             </div>
-          </div>
         </div>
 
         <!--Стрелки переключения слайдов-->
-          <a href="#carousel" class="left carousel-control" data-slide="prev">
+        <a href="#carousel" class="left carousel-control" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a href="#carousel" class="right carousel-control" data-slide="next">
+        </a>
+        <a href="#carousel" class="right carousel-control" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-        </div>
-      </div>
+        </a>
+    </div>
+</div>
 
-      <div class="container main-page-content">
-        <div class="row little-row">
-          <div class="col-lg-4 col-md-4 col-sm-4 little-shedule">
+<div class="container main-page-content">
+    <div class="row little-row">
+        <div class="col-lg-4 col-md-4 col-sm-4 little-shedule">
             <h5>Ближайшие занятия</h5>
+
             <div class="little-shedule-content">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <span class="badge">Вторник<br>10:15-12:00</span>
-                  <i class="fa fa-clock-o"></i>
-                  Рукопашный бой</li>
-                <li class="list-group-item">
-                  <span class="badge">Вторник<br>12:15-14:00</span>
-                  <i class="fa fa-clock-o"></i>
-                  Pole Dance</li>
-                <li class="list-group-item">
-                  <span class="badge">Вторник<br>14:15-16:00</span>
-                  <i class="fa fa-clock-o"></i>
-                  Рукопашный бой</li>
-              </ul>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="badge">Вторник<br>10:15-12:00</span>
+                        <i class="fa fa-clock-o"></i>
+                        Рукопашный бой
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">Вторник<br>12:15-14:00</span>
+                        <i class="fa fa-clock-o"></i>
+                        Pole Dance
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">Вторник<br>14:15-16:00</span>
+                        <i class="fa fa-clock-o"></i>
+                        Рукопашный бой
+                    </li>
+                </ul>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 little-contacts">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 little-contacts">
             <h5>Мы рядом</h5>
+
             <div class="little-contacts-content">
-              <img src="resourses/little-contacts-map.png" class="img-rounded" alt="">
-              <a href="#" class="btn btn-primary pull-right">Подробнее</a>
+                <img src="resourses/little-contacts-map.png" class="img-rounded" alt="">
+                <a href="#" class="btn btn-primary pull-right">Подробнее</a>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 little-free-training">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 little-free-training">
             <h5>Бесплатное посещение</h5>
+
             <div class="little-free-training-content">
-              <p>Начинай уже сегодня!</p>
-              <p>Приди один раз и измени свою жизнь навсегда!</p>
-              <a href="#" class="btn btn-primary pull-right">Подробнее</a>
-            </div>
-          </div>
-        </div>
+                <p>Начинай уже сегодня!</p>
 
-        <div class="row news-and-sections">
-          <div class="col-lg-7">
+                <p>Приди один раз и измени свою жизнь навсегда!</p>
+                <a href="#" class="btn btn-primary pull-right">Подробнее</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row news-and-sections">
+        <div class="col-lg-7">
             <div class="container-fluit news">
-            <h2>Новости</h2>
-              <div class="row new-1">
-                <a href="" class="btn-block">Новость 1</a>
-                <div class="content-new-1">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <h2>Новости</h2>
+
+                <div class="row new-1">
+                    <a href="" class="btn-block"></a>
+
+                    <div class="content-new-1">
+
+                    </div>
                 </div>
-              </div>
-              <div class="row new-2">
-              <a href="" class="btn-block">Новость 2</a>
-                <div class="content-new-1">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="row new-2">
+                    <a href="" class="btn-block"></a>
+
+                    <div class="content-new-2">
+
+                    </div>
                 </div>
-              </div>
-              <div class="row new-3">
-                <a href="" class="btn-block">Новость 3</a>
-                <div class="content-new-1">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="row new-3">
+                    <a href="" class="btn-block"></a>
+
+                    <div class="content-new-3">
+
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-lg-5">
+        </div>
+
+        <div class="col-lg-5">
             <div class="container-fluit sections">
-            <h2>Секции</h2>
-              <div class="row section-1">
-              <a href="#" class="btn-block">Рукопашный бой</a>
-              <div class="content-section-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-              </div>
-              </div>
-              <div class="row section-2">
-                <a href="#" class="btn-block">Тренажерный зал</a>
-              <div class="content-section-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-              </div>
-              <div class="row section-3">
-                <a href="#" class="btn-block">Pole-dance</a>
-              <div class="content-section-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-              </div>
+                <h2>Секции</h2>
+
+                <div class="row section-1">
+                    <a href="#" class="btn-block">Рукопашный бой</a>
+
+                    <div class="content-section-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </div>
+                </div>
+                <div class="row section-2">
+                    <a href="#" class="btn-block">Тренажерный зал</a>
+
+                    <div class="content-section-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </div>
+                </div>
+                <div class="row section-3">
+                    <a href="#" class="btn-block">Pole-dance</a>
+
+                    <div class="content-section-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
+    </div>
 
-
-
-        <!-- <div class="row news-and-sections">
-        <div class="col-lg-8 col-md-8 col-sm-8">
-        <div class="container news-container">
-          <h2 class="news-header">Новости</h2>
-          <div class="row news-without-header">
-          <div class="col-lg-8 col-md-8 col-sm-8">
-            <a class="btn-block" href="">Новость 1</a>
-            <div class="news-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam a molestiae quaerat velit, mollitia! Enim dolorum tempora omnis ipsa perspiciatis, illo itaque laboriosam vitae. Perspiciatis voluptatem error voluptatum inventore voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam a molestiae quaerat velit, mollitia! Enim dolorum tempora omnis ipsa perspiciatis, illo itaque laboriosam vitae. Perspiciatis voluptatem error voluptatum inventore voluptate?</div>
-          </div>
-          <div class="col-lg-8 col-md-8 col-sm-8">
-             <a class="btn-block" href="">Новость 2</a>
-             <div class="news-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam a molestiae quaerat velit, mollitia! Enim dolorum tempora omnis ipsa perspiciatis, illo itaque laboriosam vitae. Perspiciatis voluptatem error voluptatum inventore voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam a molestiae quaerat velit, mollitia! Enim dolorum tempora omnis ipsa perspiciatis, illo itaque laboriosam vitae. Perspiciatis voluptatem error voluptatum inventore voluptate?</div>
-          </div>
-          </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-        
-        </div>
-        </div> -->
-
-        
-       
-        </div>
-      <div class="container footer">
-        <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-3">
-            <i class="fa fa-skype"></i> skype
-          </div>
-          <div class="col-lg-1 col-md-1 col-sm-1"></div>
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <i class="fa fa-phone"></i> +380995555555
-          </div>
-          <div class="col-lg-1 col-md-1 col-sm-1"></div>
-          <div class="col-lg-3 col-md-3 col-sm-3">
-          <i class="fa fa-envelope-o"></i> lalka@gmail.com</div>
-        </div>
+    <!-- <div class="row news-and-sections">
+    <div class="col-lg-8 col-md-8 col-sm-8">
+    <div class="container news-container">
+      <h2 class="news-header">Новости</h2>
+      <div class="row news-without-header">
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <a class="btn-block" href="">Новость 1</a>
+        <div class="news-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam a molestiae quaerat velit, mollitia! Enim dolorum tempora omnis ipsa perspiciatis, illo itaque laboriosam vitae. Perspiciatis voluptatem error voluptatum inventore voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam a molestiae quaerat velit, mollitia! Enim dolorum tempora omnis ipsa perspiciatis, illo itaque laboriosam vitae. Perspiciatis voluptatem error voluptatum inventore voluptate?</div>
       </div>
+      <div class="col-lg-8 col-md-8 col-sm-8">
+         <a class="btn-block" href="">Новость 2</a>
+         <div class="news-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam a molestiae quaerat velit, mollitia! Enim dolorum tempora omnis ipsa perspiciatis, illo itaque laboriosam vitae. Perspiciatis voluptatem error voluptatum inventore voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam a molestiae quaerat velit, mollitia! Enim dolorum tempora omnis ipsa perspiciatis, illo itaque laboriosam vitae. Perspiciatis voluptatem error voluptatum inventore voluptate?</div>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4">
+
+    </div>
+    </div> -->
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-2.1.3.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+</div>
+<div class="container footer">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <i class="fa fa-skype"></i> skype
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <i class="fa fa-phone"></i> +380995555555
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <i class="fa fa-envelope-o"></i> lalka@gmail.com
+        </div>
+    </div>
+</div>
+
+
+
+</body>
 </html>

@@ -35,7 +35,7 @@ public class MySqlDaoNews implements DaoNews {
         Connection con = null;
         try {
             con = getConnection();
-            PreparedStatement ps = con.prepareStatement("select id, order_date, header, content from news order by date desc");
+            PreparedStatement ps = con.prepareStatement("select id, order_date, header, content from news order by order_date desc");
             ResultSet rs = ps.executeQuery();
             list = parseResultSet(rs);
 
@@ -46,7 +46,7 @@ public class MySqlDaoNews implements DaoNews {
             if(con != null)  realiseRes(con);
 
         }
-        return list.subList(0, 4);
+        return list.subList(0, 3);
     }
 
     @Override
