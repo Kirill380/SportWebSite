@@ -119,7 +119,7 @@
               <label>Желаемая дата</label><br>
             </div>
             <div class="col-lg-6">
-               <select id="month">
+               <select id="month" class="form-control">
                  <option>Месяц</option>
                  <option>Янаварь</option>
                  <option>Февраль</option>
@@ -135,7 +135,7 @@
                  <option>Декабрь</option>
                </select>
         
-              <select id="day">
+              <select id="day" class="form-control">
                 <option>День</option>
                 <option>1</option>
                 <option>2</option>
@@ -170,7 +170,7 @@
                 <option>31</option>
               </select>
           
-              <select id="year">
+              <select id="year" class="form-control">
                 <option>Год</option>
                 <option>2015</option>
                 <option>2016</option>
@@ -183,28 +183,28 @@
             <div class="row">
             <div class="col-lg-1"></div>
             <div class="col-lg-2">
-               <label>Ваше имя</label>
+               <label for="free-tr-name">Ваше имя</label>
             </div>
             <div class="col-lg-4">
-               <input type="text">
+               <input id="free-tr-name" type="text" class="form-control" placeholder="Введите ФИО">
             </div>
           </div>
             <div class="row">
             <div class="col-lg-1"></div>
             <div class="col-lg-2">
-            <label>E-mail адрес</label>
+            <label for="free-tr-email">E-mail адрес</label>
             </div>
             <div class="col-lg-4">
-               <input type="email">
+               <input id="free-tr-email" type="email" class="form-control" placeholder="Введите Ваш e-mail">
             </div>
           </div>
           <div class="row">
           <div class="col-lg-1"></div>
             <div class="col-lg-2">
-            <label>Телефон</label>
+            <label for="free-tr-phone">Телефон</label>
             </div>
             <div class="col-lg-4">
-               <input type="tel">
+               <input id="free-tr-phone" type="tel" class="form-control" placeholder="Введите контактный телефон" pattern="(\d{9})">
             </div>
           </div>
           <div class="row">

@@ -337,13 +337,10 @@ textarea {
 
 .registration-content input {
 	color: black;
-	height: 26px;
+	height: 30px;
 	margin-top: 25px;
 	width: 300px;
-}
-
-.registration-content input[type="date"] {
-	width: 123px;
+	border-radius: 0px;
 }
 
 .registration-content h2 {
@@ -359,6 +356,10 @@ textarea {
 .registration-content label, .registration-content select {
 	font-weight: normal;
 	margin-top: 26px;
+}
+
+.registration-content select {
+	border-radius: 0px;
 }
 
 .space {
@@ -391,6 +392,10 @@ textarea {
 
 select, option {
 	color: black !important;
+}
+
+.registration-content select {
+	width: 120px;
 }
 
 /* free training page*/
@@ -426,13 +431,18 @@ select, option {
 	margin-top: 26px;
 }
 
+.free-training-content input {
+	height: 30px;
+	border-radius: 0px;
+}
+
 .free-training-content select {
-	height: 26px;
+	border-radius: 0px;
 }
 
 #day, #year, #month {
-	width: 90px;
-	margin-right: 11px;
+	width: 97px;
+	display: inline-block;
 }
 
 .free-training-content input[type="submit"] {
