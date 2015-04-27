@@ -1,42 +1,35 @@
 
 /* All page's styles */
 
+
+
 body {
 	background: #222;
 }
 
+/*   navbar menu font size   */
 .header {
 	font-size: 16px;
 }
 
+/*   navbar menu background   */
 .navbar {
 	background: #E8E8E8;
 }
 
+/*   navbar colours  */
 .navbar-nav .active a {
 	background: #3B96A6 !important;
 	color: white !important;
 	border-bottom: none;
 }
 
+/*   bold font for free training in navbar*/
 .header .bold-font {
 	font-weight: bold;
 }
 
-input[type="submit"] {
-	height: 45px;
-	background: #3B96A6;
-	border: solid 1px #27606B;
-	color: white;
-	font-size: 18px;
-}
-
-input[type="submit"]:hover {
-	background: #27606B;
-	border: solid 1px #27606B;
-}
-
-
+/*   footer  */
 .footer {
 	border-top: solid 1px white;
 	color: white;
@@ -46,18 +39,14 @@ input[type="submit"]:hover {
 	font-size: 16px;
 }
 
+/*   footer column sizing*/
 .footer>.row {
 	margin: 20px 0;
 }
 
-.footer>.row>div {
-	/*background: #333;*/
-	border-top: none;
-}
 
-.nav>li>a {
-	color: black;
-}
+
+
 
 /* Modal page's styles*/
 
@@ -66,42 +55,40 @@ input[type="submit"]:hover {
 	margin-top: 10px;
 }
 
+/*   distance between input lines on modal window   */
+.modal-body .row {
+	margin-top: 24px;
+}
+
+
+
+
+
 
 /* Main page's styles */
 
 .slider-wrapper {
 	background: #000;
-	margin-top: 50px;
 }
 
+/*  font size of main slogans on carousel   */
 .carousel-caption h2 {
 	font-size: 56px;
 }
 
+/*   font size of subslogans on carousel   */
 .carousel-caption p {
 	font-size: 18px;
 }
 
-.modal-body .row {
-	margin-top: 24px;
-}
-
-#login input[type="submit"] {
-	height: 36px;
-	font-size: 14px;
-}
-
-.login-cancel {
-	height: 36px;
-	border-radius: 0px;
-	margin-bottom: 3px;
-}
-
+/*   some text on main page   */
 .main-page-content {
 	color: white;
 	padding: 20px;
 }
 
+/*   distance between slider and little-panel*/
+/*   little panel is panel with shedule, map and free train invitation*/
 .little-row {
 	margin-top: 20px;
 }
@@ -176,12 +163,7 @@ input[type="submit"]:hover {
 	font-size: 18px;
 }
 
-.news-header {
-	color: #DDD;
-	margin-left: 40px;
-	font-size: 22px;
-}
-
+/*   block with news and section*/
 .news-and-sections {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -340,7 +322,6 @@ textarea {
 	height: 30px;
 	margin-top: 25px;
 	width: 300px;
-	border-radius: 0px;
 }
 
 .registration-content h2 {
@@ -358,32 +339,9 @@ textarea {
 	margin-top: 26px;
 }
 
-.registration-content select {
-	border-radius: 0px;
-}
-
 .space {
 	height: 50px;
 	width: 100%;
-}
-
-.registration-content input[type="submit"] {
-	width: 200px;
-	height: 45px;
-	color: white;
-	margin-left: -47px;
-}
-
-.clean {
-	height: 45px;
-	border-radius: 0px;
-	margin-top: 25px;
-	color: black !important;
-	background: #E8E8E8 !important;
-}
-
-.clean:hover {
-	background: #B3B3B3 !important;
 }
 
 .important-field {
@@ -396,6 +354,14 @@ select, option {
 
 .registration-content select {
 	width: 120px;
+}
+
+.registration-content .btn-submit {
+	margin-right: 61px;
+}
+
+.registration-content .btn-clean {
+	margin-right: 10px;
 }
 
 /* free training page*/
@@ -433,11 +399,6 @@ select, option {
 
 .free-training-content input {
 	height: 30px;
-	border-radius: 0px;
-}
-
-.free-training-content select {
-	border-radius: 0px;
 }
 
 #day, #year, #month {
@@ -445,16 +406,15 @@ select, option {
 	display: inline-block;
 }
 
-.free-training-content input[type="submit"] {
-	width: 200px;
-	height: 45px;
-	color: white;
-	margin-left: -47px;
-}
-
 .free-training-content p {
 	margin-top: 20px;
 	color: #BB5353;
 }
 
-/* clean button style is located in registragion section*/
+.free-training-content .btn-submit {
+	margin-right: 61px;
+}
+
+.free-training-content .btn-clean {
+	margin-right: 10px;
+}
