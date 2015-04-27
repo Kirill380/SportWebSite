@@ -60,6 +60,14 @@ body {
 	margin-top: 24px;
 }
 
+.modal-body .form-control {
+	width: 200px;
+}
+
+.modal-body label {
+	line-height: 30px;
+}
+
 
 
 
@@ -313,20 +321,18 @@ textarea {
 /*   registration page style*/
 
 .registration-content {
-	margin-top: 50px;
 	color: white;
 }
 
 .registration-content input {
 	color: black;
-	height: 30px;
+	height: 34px;
 	margin-top: 25px;
 	width: 300px;
 }
 
 .registration-content h2 {
 	margin-left: 100px;
-	margin-top: 50px;
 	font-size: 32px;
 }
 
@@ -364,6 +370,12 @@ select, option {
 	margin-right: 10px;
 }
 
+.registration-content h5 {
+	margin-top: 25px;
+	margin-left: 30px;
+	margin-bottom: 0px;
+}
+
 /* free training page*/
 
 .free-training-content {
@@ -373,7 +385,7 @@ select, option {
 
 .free-training-content input {
 	color: black;
-	height: 26px;
+	height: 34px;
 	margin-top: 25px;
 	width: 300px;
 }
@@ -395,10 +407,6 @@ select, option {
 .free-training-content label, .free-training-content select {
 	font-weight: normal;
 	margin-top: 26px;
-}
-
-.free-training-content input {
-	height: 30px;
 }
 
 #day, #year, #month {

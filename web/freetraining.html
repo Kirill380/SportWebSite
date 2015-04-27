@@ -60,55 +60,56 @@
       </div>
 
       <div class="modal fade" id="login" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-md">
-          <div class="modal-content">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="loginLabel">Введите логин и пароль</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="loginLabel">Введите логин и пароль</h4>
             </div>
             <div class="modal-body">
-              <form action="" method="POST">
-                <div class="row">
-                <div class="col-lg-1"></div>
-                  <div class="col-lg-2">
-                    <label>Логин:</label>
-                  </div>
-                  <div class="col-lg-3">
-                    <input type="text">
-                  </div>
-                </div>
-                <div class="row">
-                <div class="col-lg-1"></div>
-                  <div class="col-lg-2">
-                    <label>Пароль:</label>
-                  </div>
-                  <div class="col-lg-3">
-                    <input type="password">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-1"></div>
-                  <div class="col-lg-11">
-                    <input type="checkbox">
-                    Запомнить меня?
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-1"></div>
-                  <div class="col-lg-11">
-                    Нет аккаунта?
-                    <a href="registration.html">Регистрация</a>
-                  </div>
-                </div>
-              </form>
+                <form action="" method="POST">
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-2">
+                            <label for="login">Логин:</label>
+                        </div>
+                        <div class="col-lg-3">
+                            <input type="text" class="form-control" id="login">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-2">
+                            <label for="password">Пароль:</label>
+                        </div>
+                        <div class="col-lg-3">
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-11">
+                            <input type="checkbox">
+                            Запомнить меня?
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-11">
+                            Нет аккаунта?
+                            <a href="registration.html">Регистрация</a>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default login-cancel" data-dismiss="modal">Отмена</button>
-              <button class="btn btn-primary" type="submit">Отправить</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+                <button class="btn btn-primary" type="submit">Отправить</button>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
       
       <div class="container free-training-content">
         <h2>Заказать бесплатное посещение</h2>
@@ -202,7 +203,7 @@
           <div class="row">
           <div class="col-lg-1"></div>
             <div class="col-lg-2">
-            <label for="free-tr-phone">Телефон</label>
+            <label for="phone">Телефон</label>
             </div>
             <div class="col-lg-4">
                <input id="phone" type="tel" class="form-control" placeholder="Введите контактный телефон" pattern="(\d{9})">
