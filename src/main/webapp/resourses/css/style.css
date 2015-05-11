@@ -235,7 +235,6 @@ body {
 /* Add news page's style */
 
 .content-add-news {
-	margin-top: 25px;
 	color: white;
 }
 
@@ -410,5 +409,5 @@ select, option {
 }
 
 .personal-page li .active {
-	background: #27606B !important;
+	background: #3B96A6 !important;
 }
