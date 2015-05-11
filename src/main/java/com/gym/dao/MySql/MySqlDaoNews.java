@@ -35,7 +35,7 @@ public class MySqlDaoNews implements DaoNews {
         Connection con = null;
         try {
             con = getConnection();
-            PreparedStatement ps = con.prepareStatement("select id, order_date, header, content from news order by order_date desc");
+            PreparedStatement ps = con.prepareStatement("select id, publish_date, title, description, admin_id from news order by order_date desc");
             ResultSet rs = ps.executeQuery();
             list = parseResultSet(rs);
 
@@ -54,10 +54,11 @@ public class MySqlDaoNews implements DaoNews {
         Connection con = null;
         try {
             con = getConnection();
-            PreparedStatement ps = con.prepareStatement("insert into news(order_date, header, content) values(?, ?, ?);");
+            PreparedStatement ps = con.prepareStatement("insert into news(publish_date, title, description, admin_id ) values(?, ?, ?, ?);");
             ps.setTimestamp(1, n.getOrderDate());
             ps.setString(2, n.getHeader());
             ps.setString(3, n.getContent());
+            ps.setInt(4, n.getAdmin_id());
             int count = ps.executeUpdate();
             if (count != 1) {
                 throw new PersistException("On persist inserted more then 1 record: " + count);
@@ -92,6 +93,7 @@ public class MySqlDaoNews implements DaoNews {
         }
     }
 
+
     private Connection getConnection() throws PersistException {
         Connection con = null;
         try {
@@ -120,8 +122,10 @@ public class MySqlDaoNews implements DaoNews {
                 News temp = new News(
                         rs.getInt("id"),
                         rs.getTimestamp("order_date"),
-                        rs.getString("header"),
-                        rs.getString("content")
+                        rs.getString("title"),
+                        rs.getString("description"),
+                        rs.getInt("admin_id")
+
                 );
                 res.add(temp);
             }

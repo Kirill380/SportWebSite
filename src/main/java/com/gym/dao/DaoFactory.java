@@ -7,4 +7,7 @@ import com.gym.dao.exceptions.PersistException;
  */
 public interface DaoFactory {
     public DaoNews getDaoNews() throws PersistException;
+    public DaoUser getDaoUser() throws PersistException;
+    public DaoWorkout getDaoWorkout() throws PersistException;
+    public DaoExercise getDaoExercise() throws PersistException;
 }

@@ -10,16 +10,27 @@ public class News {
     private Timestamp orderDate;
     private String header;
     private String content;
+    private int admin_id;
+
+    public int getAdmin_id() {
+        return admin_id;
+    }
+
+    public void setAdmin_id(int admin_id) {
+        this.admin_id = admin_id;
+    }
+
 
     public News() {
 
     }
 
-    public News(int id, Timestamp date, String content, String header) {
+    public News(int id, Timestamp date, String content, String header, int admin_id) {
         this.id = id;
         this.orderDate = date;
         this.content = content;
         this.header = header;
+        this.admin_id = admin_id;
     }
 
     public void setOrderDate(Timestamp orderDate) {

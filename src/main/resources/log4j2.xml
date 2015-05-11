@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" packages="logger">
+    <Appenders>
+        <File name="error" fileName="logs/error/error-${date:yyyy-MM-dd}.log">
+            <PatternLayout>
+                <Pattern>%d{dd-MM-yyyy} %p %C [%t] in %M: %m %ex%n</Pattern>
+            </PatternLayout>
+        </File>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>%highlight{%d %p %m%n}{ERROR=red, WARN=yellow, INFO=black}</Pattern>
+            </PatternLayout>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="trace">
+            <AppenderRef ref="error" level="WARN"/>
+            <AppenderRef ref="STDOUT" level="INFO"/>
+        </Root>
+    </Loggers>
+</Configuration>
