@@ -13,92 +13,72 @@
 
   </head>
   <body>
-      <div class="container header">
-        <div class="row">
-          <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid header">
+    <div class="row">
+        <div class="navbar navbar-default">
             <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#responsive-menu">
-                <span class="sr-only">Открыть навигацию</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-              
-              <div class="collapse navbar-collapse" id="responsive-menu">
-                <ul class="nav navbar-nav">
-                  <li><a href="index.html">Главная</a></li>
-                  <li><a href="#">Бесплатная тренировка</a></li>
-                  <li><a href="#">Расписание</a></li>
-                  <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Секции <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Тренажерный зал</a></li>
-                    <li><a href="#">Рукопашный бой</a></li>
-                    <li><a href="#">Бассейн</a></li>
-                  </ul>
-                  </li>
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Дополнительные услуги <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Спа</a></li>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#responsive-menu">
+                        <span class="sr-only">Открыть навигацию</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="responsive-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Главная</a></li>
+                        <li><a href="freetraining.html"><span class="bold-font">Бесплатная тренировка</span></a></li>
+                        <li><a href="#">Расписание</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Секции <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Тренажерный зал</a></li>
+                                <li><a href="#">Рукопашный бой</a></li>
+                                <li><a href="#">Pole dance</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">О нас <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">История</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Тренера</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                  </li>
-                  <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">О нас <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">История</a></li>
-                    <li><a href="#">Вакансии</a></li>
-                    <li><a href="#">Тренера</a></li>
-                  </ul>
-                  </li>
-                    <li><a href="#">Контакты</a></li>
-                  <li><a href="#">Личный кабинет</a></li>
-                </ul>
-              </div>
+                    <ul class="nav navbar-nav navbar-right">
+                     <li class="active"><a href=""><b>Создание новости</b></a></li>
+                        <li><a href="index.html"><b>Выход</b></a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
 
       <div class="container content-add-news">
         <div class="row"><h1>Создание новости</h1></div>
         <div class="row">
           <form action="/NewsController" method="POST">
           <label for="head"><h3>Заголовок</h3></label><br>
-          <input type="text" name="head" id="head" placeholder="Введите заголовок новости" maxlength="64"><br>
+          <input class="form-control" type="text" name="head" id="head" placeholder="Введите заголовок новости" maxlength="64"><br>
           <label for="new-content"><h3>Содержимое</h3></label><br>
-          <textarea id="new-content" name="content" placeholder="Введите содержимое новости" maxlength="255"></textarea>
+          <textarea class="form-control" id="new-content" name="content" placeholder="Введите содержимое новости" maxlength="255"></textarea>
 
-        <div class="row btn-wrapper">
-          <button type="submit" class="btn btn-default" data-toggle="modal" data-target="#success-send">Создать новость</button>
-        </div>
+      
+          <button type="submit" class="btn btn-primary">Создать новость</button>
+
+
 
         </form>
         </div>
       </div>
 
-      <!-- <div class="modal fade" id="success-send">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-            <button class="close" type="button" data-dismiss="modal">
-              &times;
-            </button>
-            <h4 class="modal-title">Отправка данных успешна</h4>
-      
-            </div>
-            <div class="modal-body">
-              <p>Данные успешно отправлены на сервер. Новость сохранена в базу данных и будет опубликована при следующем обновлении главной страницы</p>
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-success" type="button" data-dismiss="modal">OK</button>
-            </div>
-          </div>
-        </div>
-      
-      </div> -->
-      
+<div class="space"></div>
       <div class="container footer">
         <div class="row">
           <div class="col-lg-3">
