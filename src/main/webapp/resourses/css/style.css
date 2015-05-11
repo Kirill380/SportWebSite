@@ -402,10 +402,16 @@ select, option {
 	color: white;
 	font-size: 18px;
 	margin-top: 20px;
+	margin-bottom: 30px;
 }
 
 .training-table #exercise-name {
 	font-size: 28px;
+	border-top: none;
+}
+
+.training-table .last-attempt {
+	border-bottom: 1px solid white;
 }
 
 .personal-page li .active {
