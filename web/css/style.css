@@ -426,3 +426,39 @@ select, option {
 .free-training-content .btn-clean {
 	margin-right: 10px;
 }
+
+/*     personal page style    */
+
+.personal-page h2 {
+	color: white;
+	margin-left: 30px;
+	margin-top: 50px;
+}
+
+.personal-page nav {
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.personal-page .pagination>li>a {
+	color: white;
+	background: #222;
+}
+
+.personal-page .pagination>li>a:hover {
+	background: #444;
+}
+
+.personal-page iframe {
+	position: absolute;
+}
+
+.training-table {
+	width: 700px;
+	color: white;
+	font-size: 18px;
+}
+
+.training-table #exercise-name {
+	font-size: 28px;
+}
